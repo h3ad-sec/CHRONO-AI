@@ -1220,6 +1220,10 @@ body.light .history-panel { background:rgba(255,255,255,.92); }
   .mitre-grid { grid-template-columns:repeat(auto-fill, minmax(200px,1fr)); }
 }
 
+@media(max-width:1000px){
+  .xv-nav-pill{opacity:1;transform:none;pointer-events:auto;transition:none;}
+}
+
 /* ── Mobile (≤640px) ─────────────────────────────────────────────────────── */
 @media (max-width:640px) {
   /* Nav */
@@ -1287,9 +1291,6 @@ body.light .history-panel { background:rgba(255,255,255,.92); }
 
   /* Section title text */
   .section-title { font-size:9px; letter-spacing:2px; }
-
-  /* Nav pill — prevent overflow when scrolled (pill appears in nav) */
-  .xv-nav-pill { display:none !important; }
 
   /* Hero — tighter typography on mobile */
   .hero-title-row { font-size:18px; letter-spacing:3px; }
