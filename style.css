@@ -1312,6 +1312,17 @@ body.light .history-panel { background:rgba(255,255,255,.92); }
   /* Focused artifact items — allow wrapping on narrow screens */
   .focused-artifact-item { flex-wrap:wrap; min-width:0; }
   .focused-artifact-context { word-break:break-all; max-width:100%; }
+
+  /* Textarea / input — full width guard */
+  textarea, input[type="text"] { width:100%; min-width:0; }
+
+  /* CHRONO-AI specific — stack chrono event gutter+body vertically */
+  .chrono-event { flex-direction:row; } /* keep gutter left, body stacks internally */
+  .chrono-body { padding:8px 10px; }
+  .chrono-ts { font-size:10px; }
+  .chrono-event-text { font-size:var(--fs-xs); }
+  .chrono-badges { gap:4px; }
+  .stage-badge { font-size:8px; padding:1px 5px; }
 }
 
 /* ── XS phones (≤400px) ──────────────────────────────────────────────────── */
@@ -1330,6 +1341,9 @@ body.light .history-panel { background:rgba(255,255,255,.92); }
   .hero-title-row { font-size:15px; letter-spacing:2px; }
   .hero-tagline { display:none; }
   .hero-breadcrumb { font-size:9px; }
+  main { padding:calc(var(--nav-h) + var(--hero-h) + 8px) 8px 24px; }
+  .input-card { padding:10px 8px; }
+  .chrono-body { padding:6px 8px; }
 }
 
 /* ── Mode tabs (8-tab analysis mode selector) ────────────────────── */
